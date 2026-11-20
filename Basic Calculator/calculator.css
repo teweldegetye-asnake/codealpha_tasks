@@ -1,0 +1,96 @@
+*{
+    background-color: black;
+}
+#calculator{
+    width: 90%;
+    border: black 1px solid;
+    margin: 20vh auto;
+}
+#topPart{
+    width: 100%;
+    height: 20vh;
+}
+input[name="number"]{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: x-large;
+    color: white;
+    border: none;
+}
+.keyboard{
+    width: 100%;
+    height: min-content;
+}
+.keyboard > ul{
+    width: 100%;/*may it be grid or block*/
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: xx-large;
+}
+.operations{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    justify-items: center;
+    margin-top: 0.5em;
+}
+.operations > li{
+    color: #000;
+    background-color: white;
+}
+#ac{
+    grid-column-start: 2;
+    padding-top: 3%;
+   
+}
+.numbers{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    justify-items: center;
+    gap: 0.2em;
+    margin-bottom: 0.5em;
+}
+li{
+    list-style: none;
+    background-color: rgba(247, 255, 240, 0.21);
+    border-radius: 50%;
+    width: 95%;
+    height: 100%;
+    text-align: center;
+    margin: 5%;
+    color: white;
+    transition: color 0.3s ease,
+                background-color 0.3s ease;
+}
+li:hover{
+    color: rgb(75, 76, 78);
+}
+.basicOperations:hover{
+    background-color: rgb(78, 74, 74);
+}
+#equal:hover{
+    background-color: rgb(78, 74, 74);
+}
+@media(max-width: 500px){
+    .keyboard > ul{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .operations{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+    .numbers{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1em;
+    }
+}
