@@ -1,0 +1,40 @@
+.h1 {
+    float: left;
+}
+.nav{
+    float: right;
+    margin-top: 35px;
+}
+a{
+    color: black;
+    margin-left: 7px;
+}
+a:hover{
+    color: rgb(61, 57, 57)
+}
+.menu{
+    display: none;
+}
+@media(max-width: 700px){
+    .menu{
+        display: inline;
+        float: right;
+        border: none;
+        border-radius: 50%;
+        background-color: rgb(177, 173, 173);
+    }
+    .nav{
+        display: none;
+        position: absolute;
+        right: 1px;
+        top: 20px;
+        transition: display 1s ease;
+    }
+    .nav > a{
+        display: block;
+        padding: 4px;
+    }
+    .show{
+        display: block;
+    }
+}

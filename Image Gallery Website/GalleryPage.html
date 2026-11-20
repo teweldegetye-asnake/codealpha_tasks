@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Gallery Page</title>
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="gallery.css">
+        <style>
+          #specific{
+               top: -13px;
+               right: 10px;
+              }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="h1"><h1>TW Gallery</h1></div>
+            <button class="menu">☰</button>
+            <nav id="specific" class="nav">
+                <a href="HomePage.html">Home</a>
+                <a id="galleryLink" href="GalleryPage.html">Gallery</a>
+                <a href="AboutPage.html">About</a>
+            </nav>
+        </header>
+        <div class="inputsearchbar"><input type="search" placeholder= "Search image" name="searchbar"></div>
+        <nav class="catagories">
+            <button class="catagory">All</button>
+            <button class="catagory">Humans</button>
+            <button class="catagory">Animals</button>
+            <button class="catagory">Nature</button>
+            <button class="catagory">Water</button>
+            <button class="catagory">Space</button>
+        </nav>
+        <div class="imageContainer">
+            <img src="./Source/Animals/Animals3.jpg">
+            <img src="./Source/Nature/Nature1.jpg">
+            <img src="./Source/Humans/Humans5.jpg">
+            <img src="./Source/Space/Space1.jpg">
+            <img src="./Source/Water/Water4.jpg">
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="gallery.js"></script>
+        <script src="header.js"></script>
+    </body>
+</html>

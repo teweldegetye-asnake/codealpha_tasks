@@ -1,0 +1,62 @@
+.catagories{
+    clear:both;
+    margin-top: 1px;
+    max-width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    float: none;
+}
+.inputsearchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+input{
+    border: 1.5px solid black;
+    border-radius: 3px;
+}
+.imageContainer{
+    background-color: rgb(241, 248, 248);
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,150px));
+    justify-content: center;
+    gap: 5px;
+    margin: 15px auto;
+    padding: 3px 15px;
+}
+img{
+    width: 100%;
+}
+.div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.clickedBox{
+    position: fixed;
+    background-color: rgba(43, 41, 41, 0.9);
+    inset: 0;
+    font-size: x-large;
+    color: aliceblue;
+}
+.imageClass{
+    width: fit-content;
+    height: fit-content;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+.image{
+    transition: transform 0.3s ease;
+}
+.image:hover{
+    transform: scale(1.05);
+}
+@media(max-width: 500px) {
+    .inputsearchbar{
+        clear: both;
+    }
+}
