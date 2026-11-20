@@ -1,0 +1,41 @@
+            header{
+                background-color: rgb(213, 232, 213);
+                margin-bottom: 1em;
+                border-top-left-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+            nav{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: end; 
+                
+                padding: 0.5em;
+                gap: 1.5em;
+                
+            }
+            #menu{
+                display: none;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            a:hover{
+                color: rgb(117, 114, 114);
+            }
+            @media(max-width: 700px){
+                .show{
+                    display: block;
+                    text-align: end;
+                }
+                #menu{
+                    display: block;
+                    background-color: rgb(201, 211, 201);
+                    border: none;
+                }
+                nav{
+                    display: none;
+                }
+            }

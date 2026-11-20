@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Projects</title>
+        <link rel="stylesheet" href="header.css">
+        <style>
+            body{
+                background-color: honeydew;
+            }
+            p{
+                text-align: justify;
+            }
+            .container{
+                margin: 0 10vw;
+            }
+            .container2{
+                margin-left: 25%;
+            }
+            .bigger{
+                position: fixed;
+                inset: 5vh;
+                left: 10vw;
+                width: 70vw;
+                height: fit-content;
+                box-shadow: 3px 4px 5px 10px rgb(180, 174, 174);
+            }
+            @media(min-width: 700px){
+                .images,.gallery,.calculator{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit,minmax(150px,250px));
+                    gap: 15px;
+                }
+                .container2{
+                    margin-top: 20px;
+                    margin-left: 0px;
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <button id="menu">☰</button>
+            <nav>
+            <div class="head"><a href="./index.html">Home</a></div>
+            <div class="head"><a href="./aboutme.html">About Me</a></div>
+            <div class="head"><a href="./projects.html">Projects</a></div>
+            <div class="head"><a href="./education.html">Education Certificates</a></div>
+            </nav>
+        </header>
+
+        <div class="container">
+                <h2>Image Gallery Website</h2>
+                <p>A responsive and user-friendly image gallery website designed to showcase beautiful images from different categories, 
+                   including Humans, Animals, Nature, Water, Space, and more. Users can easily browse images, filter them by category, 
+                   search for specific images, and click on any image to view a larger preview. The website features an attractive layout, 
+                   smooth transitions, and interactive elements to provide an enjoyable browsing experience. This project demonstrates my 
+                   skills in HTML, CSS, and JavaScript, particularly in DOM manipulation, event handling, and responsive web design.</p>
+            <div class="gallery">
+                <img src="./sources/home page image gallery.png" width="100%" alt="home page of image gallery">
+                <img src="./sources/gallery page.png" width="100%" alt="gallery page">
+                <img src="./sources/detail view of image gallery.png" width="100%" alt="detail view of image gallery">
+                <img src="./sources/searching of image gallery.png" width="100%" alt="searching of image gallery">
+                <img src="./sources/hamburger of image gallery.png" width="100%" alt="hamburger of image gallery">
+            </div>
+                <h2>calculator</h2>
+                <p>An interactive and responsive calculator designed to perform everyday mathematical calculations quickly 
+                   and accurately. It supports basic arithmetic operations, including addition, subtraction, multiplication, 
+                   and division. Users can enter numbers, perform calculations, clear inputs, and view results through a simple 
+                   and intuitive interface. The project focuses on functionality, input handling, and a user-friendly design. 
+                   It demonstrates my understanding of JavaScript functions, conditional statements, event handling, and DOM 
+                   manipulation, combined with HTML and CSS.</p>
+            <div class="calculator">
+                
+                <img src="./sources/calculatorfeature1.png" width="100%" alt="calculator on full screen">
+                <img src="./sources/calculatorfeature2.png" width="100%" alt="calculator on narrow screen">
+            </div>
+            <div>
+                <h2>UNIVERSITY EMERGENCY ALERT SYSTEM</h2>
+                <p>A mobile and web based system that allows students and university community to quickly report emergencies 
+                   with thier location to adminstrators. This project focuses on providing emergency alert services for students, 
+                   staff, and community members within a university campus. The system consists of a mobile application for users 
+                   and a central monitoring system for security personnel to manage emergency incidents.</p>
+            </div>
+            <div class="images">
+                <img src="./sources/user login page.png" width="200px" alt="user login page">
+                <img src="./sources/user interface.png" width="200px" alt="user interface">
+                <img src="./sources/dashboard.png" width="200px" alt="admin dashboard">
+                <img src="./sources/map.png" width="200px" alt="admin map">
+                <img src="./sources/panel.png" width="200px" alt="admin panel">
+            </div>
+            <div class="container2">
+                <div class="technology"> 
+                    <h3>Technologies:</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Firebase</li>
+                    <li>Cordova</li>
+                </ul>
+                </div>
+                <div class="features">
+                <h3>Main Features:</h3>
+                <ul>
+                    <li>Emergency alert</li><li>GPS location</li>
+                    <li>User authentication</li><li>Admin dashboard</li>
+                    <li>Alert management</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <script src="projects.js"></script>
+    </body>
+</html>
